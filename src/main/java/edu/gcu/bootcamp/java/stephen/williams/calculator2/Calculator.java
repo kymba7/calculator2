@@ -16,7 +16,11 @@ public class Calculator {
 		
 //		int resultOfCalculation = add(num1, num2);
 		
-		int resultOfCalculation = subtract(num1, num2);
+//		int resultOfCalculation = subtract(num1, num2);
+		
+//		int resultOfCalculation = multiply(num1, num2);
+		
+		int resultOfCalculation = divide(num1, num2);
 		
 		displayResult(resultOfCalculation);
 		
@@ -37,7 +41,10 @@ public class Calculator {
 	
 	private static void displayResult(int result) {
 		
-		System.out.println("The difference between the two numbers is " + result);
+//		System.out.println("The sum of the two numbers is " + result);
+//		System.out.println("The difference between the two numbers is " + result);
+//		System.out.println("The product of the two numbers is " + result);
+		System.out.println("The quotient of the two numbers is " + result);
 	}
 	
 	private static int subtract(int num1, int num2) {
@@ -45,5 +52,15 @@ public class Calculator {
 		int difference = num1 - num2;
 		return difference;
 	}
-	
+	private static int multiply(int num1, int num2) {
+		
+		int product = num1 * num2;
+		return product;
+	}
+	private static int divide(int num1, int num2) {
+		
+		int quotient = num1 / num2;
+		return quotient;
+		
+	}
 }
